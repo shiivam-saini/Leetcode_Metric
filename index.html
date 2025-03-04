@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMetric - Track Your LeetCode Progress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LeetMetric</h1>
+        <p>Enter your Leetcode username to check your progress:</p>
+
+        <div class="user-input-container">
+            <input type="text" placeholder="Enter your LeetCode username" id="user-input">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="stats-container">
+            <div class="progress">
+                <div class="progress-item">
+                    <div class="circle easy-progress">
+                        <span id="easy-label"></span>
+                        <p>Easy</p>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="circle medium-progress">
+                        <span id="medium-label"></span>
+                        <p>Medium</p>
+                    </div>
+                </div>
+                
+                <div class="progress-item">
+                    <div class="circle hard-progress">
+                        <span id="hard-label"></span>
+                        <p>Hard</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-cards">
+                <div class="card">
+                    <h3>Total Problems Solved</h3>
+                    <p id="total-problems">0</p>
+                </div>
+                <div class="card">
+                    <h3>LeetCode Global Ranking</h3>
+                    <p id="ranking">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
